@@ -31,7 +31,6 @@ public class Frm_Menu extends javax.swing.JFrame {
         btnInsertarM = new javax.swing.JButton();
         btnMostrarM = new javax.swing.JButton();
         btnEliminarM = new javax.swing.JButton();
-        btnModificarM = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,7 +44,7 @@ public class Frm_Menu extends javax.swing.JFrame {
             }
         });
 
-        btnMostrarM.setText("Mostar");
+        btnMostrarM.setText("Mostar, Modificar");
         btnMostrarM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMostrarMActionPerformed(evt);
@@ -53,8 +52,6 @@ public class Frm_Menu extends javax.swing.JFrame {
         });
 
         btnEliminarM.setText("Eliminar");
-
-        btnModificarM.setText("Modificar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -65,14 +62,13 @@ public class Frm_Menu extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(142, 142, 142)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnInsertarM, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
+                            .addComponent(btnInsertarM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnMostrarM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnEliminarM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnModificarM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(btnEliminarM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(158, 158, 158)
                         .addComponent(jLabel1)))
-                .addContainerGap(151, Short.MAX_VALUE))
+                .addContainerGap(130, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,9 +81,7 @@ public class Frm_Menu extends javax.swing.JFrame {
                 .addComponent(btnMostrarM)
                 .addGap(36, 36, 36)
                 .addComponent(btnEliminarM)
-                .addGap(36, 36, 36)
-                .addComponent(btnModificarM)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
 
         pack();
@@ -140,7 +134,6 @@ public class Frm_Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnEliminarM;
     public javax.swing.JButton btnInsertarM;
-    public javax.swing.JButton btnModificarM;
     public javax.swing.JButton btnMostrarM;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables

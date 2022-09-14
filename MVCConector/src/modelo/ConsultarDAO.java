@@ -13,5 +13,7 @@ import java.util.ArrayList;
  */
 public interface ConsultarDAO {
     public void insertar(Cliente p);
+    public void actualizar(Cliente p);
+    public void eliminar(Cliente p);
     public ArrayList<Cliente> consultarTabla();
 }

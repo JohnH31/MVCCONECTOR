@@ -28,10 +28,9 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="142" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnInsertarM" pref="107" max="32767" attributes="0"/>
+                          <Component id="btnInsertarM" max="32767" attributes="0"/>
                           <Component id="btnMostrarM" max="32767" attributes="0"/>
                           <Component id="btnEliminarM" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnModificarM" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -39,7 +38,7 @@
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="151" max="32767" attributes="0"/>
+              <EmptySpace pref="130" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -54,9 +53,7 @@
               <Component id="btnMostrarM" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Component id="btnEliminarM" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-              <Component id="btnModificarM" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="44" max="32767" attributes="0"/>
+              <EmptySpace pref="48" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -83,7 +80,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnMostrarM">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Mostar"/>
+        <Property name="text" type="java.lang.String" value="Mostar, Modificar"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMostrarMActionPerformed"/>
@@ -95,14 +92,6 @@
     <Component class="javax.swing.JButton" name="btnEliminarM">
       <Properties>
         <Property name="text" type="java.lang.String" value="Eliminar"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnModificarM">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Modificar"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

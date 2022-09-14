@@ -56,5 +56,35 @@ public class ClienteDAO implements ConsultarDAO{
         }
         return info;
     }
+
+    @Override
+    public void actualizar(Cliente p) {
+        Conector c = new Conector();
+        try {
+            c.conectar();
+            String consulta = "UPDATE tbl_cliente SET nit =" + p.getNit()+ ", "
+                    + "nombres ='" + p.getNombres()+ "', apellidos='" + p.getApellidos()
+                    + "', direccion='" + p.getDireccion()+ "', telefono=" + p.getTelefono()
+                    + ", fecha_nacimiento='" + p.getFecha_nacimiento()+ "' WHERE id  =" + p.getId();
+            c.consultas_multiples(consulta);
+        } catch (Exception e) {
+            System.err.println("Mensaje Actualizar " + e.getMessage());
+        }
+        c.desconectar();
+    }
+
+    @Override
+    public void eliminar(Cliente p) {
+        Conector c = new Conector();
+        try {
+            c.conectar();
+            String consulta = "DELETE FROM tbl_cliente WHERE id =" + p.getId() + ";";
+            c.consultas_multiples(consulta);
+
+        } catch (Exception e) {
+            System.out.println("Mensaje eliminar " + e.getMessage());
+        }
+        c.desconectar();
+    }
     
 }
